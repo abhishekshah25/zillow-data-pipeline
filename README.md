@@ -6,6 +6,9 @@ The Zillow Data Analytics Pipeline is designed to streamline and automate the pr
 
 ### Architecture
 
+![airflow_pipeline](https://github.com/abhishekshah25/zillow-data-pipeline/assets/147745895/b7602d48-49c6-4840-ae00-0fff8ff1fa67)
+
+
 The pipeline leverages the following AWS services:
 
 1. Amazon EC2: Hosts Apache Airflow for orchestrating the ETL processes.
@@ -19,20 +22,31 @@ The pipeline leverages the following AWS services:
 
 #### Extraction:
 
--> Use the Zillow API to extract real estate data.
+-> Use the Zillow API to extract real estate data
+
+![S3](https://github.com/abhishekshah25/zillow-data-pipeline/assets/147745895/0f068247-8c82-46df-8980-f72666c6f9d0)
 
 #### Transformation:
 
 -> Apache Airflow on EC2 orchestrates the ETL processes.
+
 -> AWS Lambda performs data transformation tasks to ensure data is clean and structured.
+
+![lambda](https://github.com/abhishekshah25/zillow-data-pipeline/assets/147745895/88fb65c4-4774-47a3-b980-e4002513717f)
+
 
 #### Loading:
 
 -> Transformed data is loaded into Amazon Redshift for efficient storage and analysis.
 
+![redshift](https://github.com/abhishekshah25/zillow-data-pipeline/assets/147745895/9370c706-80c9-4f70-a077-c5df7bd7ecf9)
+
+
 #### Visualization:
 
 -> Amazon QuickSight creates interactive dashboards to visualize real estate market trends.
+
+![quicksight](https://github.com/abhishekshah25/zillow-data-pipeline/assets/147745895/4a358d5b-b6ec-4ec1-8672-7f687af80fc7)
 
 
 ### Features
