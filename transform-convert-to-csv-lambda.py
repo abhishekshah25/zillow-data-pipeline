@@ -28,16 +28,13 @@ def lambda_handler(event, context):
     for i in data["results"]:
         f.append(i)
     df = pd.DataFrame(f)
-    # Select specific columns
     selected_columns = ['bathrooms', 'bedrooms', 'city', 'homeStatus', 
                     'homeType','livingArea','price', 'rentZestimate','zipcode']
     df = df[selected_columns]
     print(df)
     
-    # Convert DataFrame to CSV format
     csv_data = df.to_csv(index=False)
     
-    # Upload CSV to S3
     bucket_name = target_bucket
     object_key = f"{target_file_name}.csv"
     s3_client.put_object(Bucket=bucket_name, Key=object_key, Body=csv_data)
