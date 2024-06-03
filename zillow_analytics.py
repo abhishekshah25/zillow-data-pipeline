@@ -54,7 +54,7 @@ with DAG('zillow_analytics_dag',
         task_id= 'tsk_extract_zillow_data_var',
         python_callable=extract_zillow_data,
         op_kwargs={'url': 'https://zillow56.p.rapidapi.com/search', 'querystring': {"location":"houston, tx"}, 'headers': api_host_key, 'date_string':dt_now_string}
-        ) # Modify query accordingly
+        ) # Modify arguments with respect to location
 
         load_to_s3 = BashOperator(
             task_id = 'tsk_load_to_s3',
