@@ -10,6 +10,6 @@ CREATE TABLE IF NOT EXISTS zillowdata (
     zipcode INT
 )
 
-SELECT * FROM zillowdata
+SELECT * FROM zillowdata;
 
-SELECT COUNT(*) FROM zillowdata
+SELECT COUNT(*) FROM zillowdata;
