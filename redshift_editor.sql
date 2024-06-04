@@ -8,7 +8,7 @@ CREATE TABLE IF NOT EXISTS zillowdata (
     price NUMERIC,
     rentZestimate NUMERIC,
     zipcode INT
-)
+);
 
 SELECT * FROM zillowdata;
 
