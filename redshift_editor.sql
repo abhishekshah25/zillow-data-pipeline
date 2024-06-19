@@ -1,4 +1,5 @@
-CREATE TABLE IF NOT EXISTS zillowdata (
+CREATE TABLE IF NOT EXISTS zillowdata
+(
     bathrooms NUMERIC,
     bedroom NUMERIC,
     city VARCHAR(255),
