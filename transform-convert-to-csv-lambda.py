@@ -19,9 +19,7 @@ def lambda_handler(event, context):
     response = s3_client.get_object(Bucket=source_bucket, Key=object_key)
     print(response)
     data = response['Body']
-    print(data)
     data = response['Body'].read().decode('utf-8')
-    print(data)
     data = json.loads(data)
     print(data)
     f = []
@@ -31,7 +29,6 @@ def lambda_handler(event, context):
     selected_columns = ['bathrooms', 'bedrooms', 'city', 'homeStatus', 
                     'homeType','livingArea','price', 'rentZestimate','zipcode']
     df = df[selected_columns]
-    print(df)
     
     csv_data = df.to_csv(index=False)
     
