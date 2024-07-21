@@ -17,5 +17,5 @@ def lambda_handler(event, context):
     s3_client.copy_object(Bucket=target_bucket, Key=object_key, CopySource=copy_source)
     return {
         'statusCode': 200,
-        'body': json.dumps('Copy to intermediate bucket completed successfully!')
+        'body': json.dumps('Copy to Intermediate bucket completed successfully!')
     }
