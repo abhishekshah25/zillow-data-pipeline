@@ -11,6 +11,6 @@ CREATE TABLE IF NOT EXISTS zillowdata
     zipcode INT
 );
 
-SELECT * FROM zillowdata;
+SELECT * FROM zillowdata SAMPLE 100;
 
 SELECT COUNT(*) FROM zillowdata;
