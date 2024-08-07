@@ -47,7 +47,7 @@ default_args = {
 
 with DAG('zillow_analytics_dag',
         default_args=default_args,
-        schedule_interval = '@daily',
+        schedule_interval = '@weekly',
         catchup=False) as dag:
 
         extract_zillow_data_var = PythonOperator(
