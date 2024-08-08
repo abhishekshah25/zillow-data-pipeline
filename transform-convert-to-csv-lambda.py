@@ -36,8 +36,7 @@ def lambda_handler(event, context):
     object_key = f"{target_file_name}.csv"
     s3_client.put_object(Bucket=bucket_name, Key=object_key, Body=csv_data)
     
-    
     return {
         'statusCode': 200,
-        'body': json.dumps('CSV conversion and S3 upload completed successfully!')
+        'body': json.dumps('CSV conversion & S3 upload completed successfully!')
     }
