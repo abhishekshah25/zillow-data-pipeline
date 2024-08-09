@@ -58,7 +58,7 @@ The pipeline leverages the following AWS services:
 ### Features
 
 1. Scalable: The pipeline processes over 50,000 records monthly.
-2. Efficient: Ensures efficient data handling through automated ETL processes.
+2. Efficient: Ensures efficient data handling via automated ETL processes.
 3. Insightful: Provides detailed and interactive visualizations for real estate market analysis.
 
 ### Getting Started
