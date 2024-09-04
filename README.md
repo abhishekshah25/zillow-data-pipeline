@@ -34,7 +34,7 @@ The pipeline leverages the following AWS services:
 
 #### Transformation:
 
--> Apache Airflow on EC2 orchestrates the ETL processes.
+-> Apache Airflow on Amazon EC2 orchestrates the ETL processes.
 
 -> AWS Lambda performs data transformation tasks to ensure data is clean and structured.
 
