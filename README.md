@@ -6,7 +6,7 @@
 
 
 
-The Zillow Data Analytics Pipeline is designed to streamline & automate the process of extracting, transforming, and visualizing real estate data. By leveraging AWS services like EC2, Lambda, Redshift and QuickSight, this pipeline efficiently handles over 50,000 records monthly ensuring scalable and reliable data processing & insightful market analysis.
+The Zillow Data Analytics Pipeline is designed to streamline & automate the process of extracting, transforming, and visualizing real estate data. By leveraging AWS services like EC2, Lambda, Redshift and QuickSight, this pipeline efficiently handles over 50,000 records monthly ensuring scalable and reliable data processing and insightful market analysis.
 
 
 ### Architecture
