@@ -13,4 +13,4 @@ CREATE TABLE IF NOT EXISTS zillowdata
 
 SELECT * FROM zillowdata SAMPLE 100;
 
-SELECT COUNT(*) FROM zillowdata;
+SELECT COUNT(1) FROM zillowdata;
