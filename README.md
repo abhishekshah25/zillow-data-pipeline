@@ -43,14 +43,14 @@ The pipeline leverages the following AWS services:
 
 #### Loading:
 
--> Transformed data is loaded into Amazon Redshift for efficient storage and analysis.
+-> Transformed data is loaded into Amazon Redshift for efficient storage & analysis.
 
 ![redshift](https://github.com/abhishekshah25/zillow-data-pipeline/assets/147745895/9370c706-80c9-4f70-a077-c5df7bd7ecf9)
 
 
 #### Visualization:
 
--> Amazon QuickSight creates interactive dashboards to visualize real estate market trends.
+-> Amazon QuickSight creates interactive dashboards to visualize real estate trends.
 
 ![quicksight](https://github.com/abhishekshah25/zillow-data-pipeline/assets/147745895/4a358d5b-b6ec-4ec1-8672-7f687af80fc7)
 
