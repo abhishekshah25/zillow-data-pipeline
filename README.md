@@ -19,7 +19,7 @@ The pipeline leverages the following AWS services:
 
 1. Amazon EC2: Hosts Apache Airflow for orchestrating the ETL processes.
 2. AWS S3: Holds the raw data which arrives in the JSON format to be later used by AWS Lambda for data transformation.
-3. AWS Lambda: Handles data transformation tasks using triggers based on the raw data present in the Amazon S3 buckets.
+3. AWS Lambda: Handles data transformation tasks using triggers based on the raw data present in the S3 buckets.
 4. Amazon Redshift: Stores and analyzes the transformed data.
 5. Amazon QuickSight: Visualizes the Redshift data for insightful reporting.
 
