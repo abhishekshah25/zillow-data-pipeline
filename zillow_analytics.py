@@ -41,7 +41,7 @@ default_args = {
     'email': ['Smudger@gmail.com'],
     'email_on_failure': False,
     'email_on_retry': False,
-    'retries': 2,
+    'retries': 5,
     'retry_delay': timedelta(seconds=15)
 }
 
