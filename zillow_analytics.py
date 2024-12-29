@@ -37,11 +37,11 @@ def extract_zillow_data(**kwargs):
 default_args = {
     'owner': 'airflow',
     'depends_on_past': False,
-    'start_date': datetime(2024, 10, 28),
+    'start_date': datetime(2024, 12, 28),
     'email': ['Smudger@gmail.com'],
     'email_on_failure': False,
     'email_on_retry': False,
-    'retries': 5,
+    'retries': 2,
     'retry_delay': timedelta(seconds=15)
 }
 
